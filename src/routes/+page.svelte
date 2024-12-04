@@ -1,0 +1,25 @@
+<script>
+	import { Avatar } from '@skeletonlabs/skeleton';
+	import LinedTextarea from '$lib/components/LinedTextarea.svelte';
+	let textContent = '';
+</script>
+
+<div class="container h-full mx-auto flex justify-center items-center">
+	<Avatar src="https://i.pravatar.cc/" />
+	<LinedTextarea 
+		bind:value={textContent} 
+		rows={5} 
+		placeholder="Start typing here..."
+	/>
+	<div class="space-y-5">
+		<h1 class="h1">Let's get cracking bones!</h1>
+		<p>Start by exploring:</p>
+		<ul>
+			<li><code class="code">/src/routes/+layout.svelte</code> - barebones layout</li>
+			<li><code class="code">/src/app.postcss</code> - app wide css</li>
+			<li>
+				<code class="code">/src/routes/+page.svelte</code> - this page, you can replace the contents
+			</li>
+		</ul>
+	</div>
+</div>
